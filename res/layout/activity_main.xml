@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#759173"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/textitem"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="what to do?">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textitem"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:text="Save data to the List" />
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/savebtn"
+        android:choiceMode="singleChoice"
+        android:layout_marginLeft="18dp" >
+
+    </ListView>
+   
+
+</RelativeLayout>
